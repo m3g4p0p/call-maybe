@@ -1,0 +1,19 @@
+{
+  "name": "call-maybe",
+  "version": "0.1.0",
+  "main": "lib/index.js",
+  "repository": "https://github.com/m3g4p0p/call-maybe.git",
+  "author": "m3g4p0p",
+  "license": "MIT",
+  "devDependencies": {
+    "jasmine": "^3.3.1",
+    "standard": "^12.0.1",
+    "typescript": "^3.2.2",
+    "typings": "^2.1.1"
+  },
+  "scripts": {
+    "build": "tsc ./src/index.ts --outDir ./lib -m UMD",
+    "dev": "yarn build -- -w",
+    "prepare": "yarn build"
+  }
+}
